@@ -1,0 +1,71 @@
+/* Services Section */
+.services {
+    padding: 5rem 9%;
+    color: white;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ff66cc;
+    margin-bottom: 2rem;
+}
+
+.services p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    color: #ccc;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-box {
+    width: 22%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: rgba(255, 102, 204, 0.5); /* Original transparent pink background */
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(153, 0, 204, 0.7); /* Shadow color set to #9900cc */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white color on hover */
+}
+
+.service-box i {
+    font-size: 4rem;
+    color: #ff66cc;
+    margin-bottom: 1.5rem;
+}
+
+.service-box h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.service-box p {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+@media (max-width: 995px) {
+    .service-box {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-box {
+        width: 100%;
+    }
+}

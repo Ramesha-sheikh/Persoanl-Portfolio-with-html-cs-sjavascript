@@ -1,0 +1,122 @@
+
+/* Education Section */
+.education {
+    padding: 5rem 9%;
+    text-align: center;
+    background-color: #9900cc;
+}
+
+.education h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.education h1 span {
+    color: #ff66cc;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+.education p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: #9900cc;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Individual Education Item */
+.education-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: rgba(255, 102, 204, 0.5); /* Original transparent pink background */
+    border-left: 4px solid #ff66cc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effect */
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+   
+    box-shadow: 0 4px 16px rgba(153, 0, 204, 0.7); /* Shadow color set to #9900cc */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white color  /* Shadow for depth */
+}
+
+.education-date {
+    font-size: 1.4rem;
+    color: #9900cc;
+    margin-bottom: 0.5rem;
+}
+
+.education-content h3 {
+    font-size: 2rem;
+    color: #9900cc;
+    margin-bottom: 0.5rem;
+}
+
+.education-content h4 {
+    font-size: 1.6rem;
+    color: #9900cc;
+    margin-bottom: 1rem;
+}
+
+.education-content p {
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.8;
+}
+
+/* Separator Line */
+.education-separator {
+    margin: 4rem auto; /* Centered with margin */
+    width: 80%; /* Set a width for the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid #9900cc; /* Top border color */
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: #9900cc;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .education-list {
+        gap: 2rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+    }
+
+    .education h1 {
+        font-size: 3rem;
+    }
+
+    .education p {
+        font-size: 1.4rem;
+    }
+}
